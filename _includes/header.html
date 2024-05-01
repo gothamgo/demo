@@ -15,8 +15,11 @@
     background-color: #000000; /* Black */
     height: 60px;
   }
-  header nav.primary {
+  header nav {
     float: left;
+  }
+  header div.secondary {
+    float: right;
   }
   header div.navigation a {
     color: #FFFFFF; /* White */
@@ -24,16 +27,13 @@
     padding: 0px 5px 0px 0px;
     text-decoration: none;
   }
-  header nav a:hover {
+  header div.navigation a:hover {
     color: gray;
   }
-  header nav img {
+  header div.navigation img {
     height: 30px;
     padding: 0px 10px 0px 0px;
     margin: 0px 0px -10px 0px;
-  }
-  header div.secondary {
-    float: right;
   }
 </style>
 
@@ -42,7 +42,7 @@
     Be Good
   </div>
   <div class="navigation">
-  <nav class="primary">
+  <nav>
     <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     
     <a href="/">HOME</a>
