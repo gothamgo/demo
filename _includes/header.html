@@ -10,10 +10,12 @@
     left: 0;
     width: 100%;
   }
-  header nav.main {
+  header nav.navigation {
     padding: 10px;
     background-color: #000000; /* Black */
-    text-align: left;
+  }
+  header nav.primary {
+    float: left;
   }
   header nav a {
     color: #FFFFFF; /* White */
@@ -26,17 +28,16 @@
     margin: 0px 0px -10px 0px;
   }
   header nav.secondary {
-    padding: 10px;
-    background-color: #000000; /* Black */
-    text-align: right;
+    float: right;
   }
 </style>
 
 <header>
   <div class="header-banner">
     Be Good
-  </dev>
-  <nav class="main">
+  </div>
+  <nav>
+  <nav class="primary">
     <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     
     <a href="/">HOME</a>
@@ -45,5 +46,6 @@
   </nav>
   <nav class="secondary">
     <a href="/show_current_user/">Mr. Current User</a>
+  </nav>
   </nav>
 </header>
