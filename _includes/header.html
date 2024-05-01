@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
   }
-  header nav {
+  header nav.main {
     padding: 10px;
     background-color: #000000; /* Black */
     text-align: left;
@@ -25,7 +25,9 @@
     padding: 0px 10px 0px 0px;
     margin: 0px 0px -10px 0px;
   }
-  header nav a.current-user {
+  header nav.secondary {
+    padding: 10px;
+    background-color: #000000; /* Black */
     text-align: right;
   }
 </style>
@@ -34,12 +36,14 @@
   <div class="header-banner">
     Be Good
   </dev>
-  <nav>
+  <nav class="main">
     <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     
     <a href="/">HOME</a>
     <a href="/Favorites/">Favorites</a>
     <a href="/History/">History</a>
-    <a href="/show_current_user/" class="current-user">Mr. Current User</a>
+  </nav>
+  <nav class="secondary">
+    <a href="/show_current_user/">Mr. Current User</a>
   </nav>
 </header>
