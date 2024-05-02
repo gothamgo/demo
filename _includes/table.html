@@ -1,44 +1,44 @@
 <style>
-  #table {
+  table.table {
     padding: 10px;
     border-collapse: collapse;
     width: 100%;
   }
-  #table_column {
+  table th.header {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
   }
-  #table tr {
-  }
   
-  #table tr:nth-child(even) {
+  table tr.row {
+  }
+  table tr.row:nth-child(even) {
     background-color: #f2f2f2;
   }
-
-  #table tr:hover {
+  table tr.row:hover {
     background-color: #ddd;
   }
-  #table_header {
+  
+  table th.column {
   }
-  #table_column_label {
+  column {
   }
 </style>
 
 <table class="table">
-  <tr class="table_column">
-    <th class="table_column_label">Company</th>
-    <th class="table_column_label">Contact</th>
-    <th class="table_column_label">Country</th>
+  <tr class="header">
+    <th class="column">Company</th>
+    <th class="column">Contact</th>
+    <th class="column">Country</th>
   </tr>
-  <tr class="table_row">
-    <td class="table_cell">Alfreds Futterkiste</td>
-    <td class="table_cell">Maria Anders</td>
-    <td class="table_cell">Germany</td>
+  <tr class="row">
+    <td class="cell">Alfreds Futterkiste</td>
+    <td class="cell">Maria Anders</td>
+    <td class="cell">Germany</td>
   </tr>
-  <tr class="table_row">
-    <td class="table_cell">Centro comercial Moctezuma</td>
-    <td class="table_cell">Francisco Chang</td>
-    <td class="table_cell">Mexico</td>
+  <tr class="row">
+    <td class="cell">Centro comercial Moctezuma</td>
+    <td class="cell">Francisco Chang</td>
+    <td class="cell">Mexico</td>
   </tr>
 </table>
