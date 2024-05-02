@@ -11,6 +11,10 @@
   form.form div.form-text {
   }
 
+  form.form div.form-text input[text] {
+    width: 100%;
+  }
+
   form.form div.form-textarea {
   }
   form.form div.form-textarea textarea {
@@ -35,6 +39,18 @@
     padding-top: 10px;
   }
 
+  button {
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+  }
+
+  button:hover, button:focus {
+    background: #000;
+    color: #fff;
+  }
 </style>
 
 <div class="form">
@@ -55,8 +71,13 @@
       <label for="date">Start Date: </label><br>
       <input id="date" type="date" name="start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
     </div>
+    <!--
     <div class="form-submit">
       <input type="submit" value="Save" />
+    </div>
+    -->
+    <div class="button">
+      <button type="submit">Save</button>
     </div>
   </form>
 </div>
