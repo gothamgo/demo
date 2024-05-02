@@ -10,6 +10,9 @@
   form.form div.form-text {
   }
 
+  form.form div.form-textarea {
+  }
+
   form.form div.form-date {
   }
 
@@ -25,15 +28,19 @@
 <div class="form">
   <form action="" method="get" class="form">
     <div class="form-text">
-      <label for="name">Enter your name: </label><br>
+      <label for="name">Name: </label><br>
       <input id="name" type="text" name="name" id="name" required />
     </div>
+    <div class="form-textarea">
+      <label for="details">Details: </label><br>
+      <textarea id="details" name="details"><textarea/>
+    </div>
     <div class="form-email">
-      <label for="email">Enter your email: </label><br>
+      <label for="email">Email: </label><br>
       <input id="email" type="email" name="email" id="email" required />
     </div>
     <div class="form-date">
-      <label for="date">Start date: </label><br>
+      <label for="date">Start Date: </label><br>
       <input id="date" type="date" name="start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
     </div>
     <div class="form-submit">
