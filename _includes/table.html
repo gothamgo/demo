@@ -3,41 +3,50 @@
     border-collapse: collapse;
     width: 100%;
   }
+
+  table.table thead {
+  }
+
   table.table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
   }
   
-  table tr.row {
+  table.table tbody {
   }
-  table tr.row:nth-child(even) {
+
+  table.table tr {
+  }
+  table.table tr:nth-child(even) {
     background-color: #f2f2f2;
   }
-  table tr.row:hover {
+  table.table tr:hover {
     background-color: #ddd;
   }
   
-  table th.column {
-  }
-  column {
+  table.table td {
   }
 </style>
 
 <table class="table">
-  <tr class="header">
-    <th class="column">Company</th>
-    <th class="column">Contact</th>
-    <th class="column">Country</th>
-  </tr>
-  <tr class="row">
-    <td class="cell">Alfreds Futterkiste</td>
-    <td class="cell">Maria Anders</td>
-    <td class="cell">Germany</td>
-  </tr>
-  <tr class="row">
-    <td class="cell">Centro comercial Moctezuma</td>
-    <td class="cell">Francisco Chang</td>
-    <td class="cell">Mexico</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+    <  td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </tbody>
 </table>
