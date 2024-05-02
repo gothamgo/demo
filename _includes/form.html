@@ -6,9 +6,13 @@
 
   fieldset.form {
     padding: 2px;
+    background-color: #eeeeee;
   }
-
+  
   fieldset.form legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
   }
 
   div.form form {
@@ -64,9 +68,9 @@
 </style>
 
 <div class="form">
-<fieldset class="form">
-  <legend>My Form</legend>
   <form action="" method="get" class="form">
+    <fieldset class="form">
+    <legend>My Form</legend>
     <div class="form-text">
       <label for="name">Name: </label><br>
       <input id="name" type="text" name="name" id="name" required />
@@ -91,6 +95,6 @@
     <div class="button">
       <button type="submit">Save</button>
     </div>
+    </fieldset>
   </form>
-</fieldset>
 </div>
