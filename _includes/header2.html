@@ -9,22 +9,22 @@
   header div.logo {
     float: left;
   }
-  header div.menu {
+  header div.logo img {
+    height: 30px;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0px -10px 0px;
+  }
+  header nav {
     float: right;
   }
-  header div.menu a {
+  header nav a {
     color: #FFFFFF; /* White */
     font-size: 20px;
     padding: 0px 5px 0px 0px;
     text-decoration: none;
   }
-  header div.menu a:hover {
+  header nav a:hover {
     color: gray;
-  }
-  header div.logo img {
-    height: 30px;
-    padding: 0px 10px 0px 0px;
-    margin: 0px 0px -10px 0px;
   }
 </style>
 
@@ -33,10 +33,10 @@
     <div class="logo">
       <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     </div>
-    <div class="menu">
+    <nav>
       <a href="/">HOME</a>
       <a href="/Favorites/">Favorites</a>
       <a href="/History/">History</a>
-    </div>
+    </nav>
   </div>
 </header>
