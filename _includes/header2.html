@@ -1,7 +1,7 @@
 <style>
   header {
   }
-  header div.navigation {
+  header div.header {
     padding: 10px;
     background-color: #000000; /* Black */
     height: 40px;
@@ -9,19 +9,19 @@
   header nav {
     float: left;
   }
-  header div.current-user {
+  header div.menu {
     float: right;
   }
-  header div.navigation a {
+  header div.menu a {
     color: #FFFFFF; /* White */
     font-size: 20px;
     padding: 0px 5px 0px 0px;
     text-decoration: none;
   }
-  header div.navigation a:hover {
+  header div.menu a:hover {
     color: gray;
   }
-  header div.navigation img {
+  header div.menu img {
     height: 30px;
     padding: 0px 10px 0px 0px;
     margin: 0px 0px -10px 0px;
@@ -29,11 +29,11 @@
 </style>
 
 <header>
-  <div class="navigation">
+  <div class="header">
     <nav>
       <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     </nav>
-    <div class="current-user">
+    <div class="menu">
       <a href="/">HOME</a>
       <a href="/Favorites/">Favorites</a>
       <a href="/History/">History</a>
