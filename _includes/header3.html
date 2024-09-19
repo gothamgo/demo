@@ -50,7 +50,7 @@
       <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     </div>
     <div class="hamburger">
-      <img src="{{site.url}}/images/hamburger2.png" alt="Demo">
+      <img src="{{site.url}}/images/hamburger2.png" class="hamburger-icon" alt="Demo">
     </div>
     <!--
     <nav>
@@ -63,5 +63,31 @@
 </header>
 
 <script type="text/javascript">
+  /*
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger-icon");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+  */
+const hamburger= document.querySelector(".hamburger-icon");
+
+function toggleMenu() {
   alert("This alert box was called with the onload event");
+  /*
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+  */
+}
+
+hamburger.addEventListener("click", toggleMenu);
+  
+  
 </script>
