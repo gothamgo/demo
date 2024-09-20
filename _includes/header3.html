@@ -53,20 +53,20 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
       <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     </div>
     <div class="hamburger">
-      <span class="menu-icon material-icons menu-icon">menu</span>
+      <span class="menu-icon material-icons">menu</span>
       <span class="close-icon material-icons">close</span>
     </div>
     <nav class="menu">
-      <a href="/" class="menuItem">HOME</a>
-      <a href="/Favorites/" class="menuItem">Favorites</a>
-      <a href="/History/" class="menuItem">History</a>
+      <a href="/" class="menu-item">HOME</a>
+      <a href="/Favorites/" class="menu-item">Favorites</a>
+      <a href="/History/" class="menu-item">History</a>
     </nav>
   </div>
 </header>
 
 <script type="text/javascript">
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+const menuItems = document.querySelectorAll(".menu-item");
 const closeIcon= document.querySelector(".close-icon");
 const menuIcon = document.querySelector(".menu-icon");
 
@@ -74,11 +74,11 @@ function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
-    menuIcon.style.display = "initial";
+    menuIcon.style.display = "block";
   } else {
     menu.classList.add("showMenu");
     menuIcon.style.display = "none";
-    closeIcon.style.display = "initial";
+    closeIcon.style.display = "block";
   }
 }
 
