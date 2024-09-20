@@ -57,7 +57,7 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
       <span class="close-icon material-icons">close</span>
     </div>
     <!--
-    <nav>
+    <nav class="menu">
       <a href="/">HOME</a>
       <a href="/Favorites/">Favorites</a>
       <a href="/History/">History</a>
@@ -67,8 +67,8 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 </header>
 
 <script type="text/javascript">
-  /*
 const menu = document.querySelector(".menu");
+  /*
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".menu-icon");
   */
@@ -77,23 +77,16 @@ const menuIcon = document.querySelector(".menu-icon");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
-    closeIcon.style.display = "none";
-    /*
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-    */
+    menuIcon.style.display = "initial";
   } else {
-    menuIcon.style.display = "none";
-    /*
     menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
     menuIcon.style.display = "none";
-    */
+    closeIcon.style.display = "initial";
   }
 }
 
 hamburger.addEventListener("click", toggleMenu);
-  
   
 </script>
