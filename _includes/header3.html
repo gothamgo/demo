@@ -53,8 +53,8 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
       <img src="{{site.url}}/images/logo.jpg" alt="Demo">
     </div>
     <div class="hamburger">
-      <span class="material-icons menu-icon">menu</span>
-      <span class="material-icons">close</span>
+      <span class="menu-icon material-icons menu-icon">menu</span>
+      <span class="close-icon material-icons">close</span>
     </div>
     <!--
     <nav>
@@ -70,24 +70,27 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
   /*
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-  */
 const hamburger= document.querySelector(".menu-icon");
+  */
+const closeIcon= document.querySelector(".close-icon");
+const menuIcon = document.querySelector(".menu-icon");
 
 function toggleMenu() {
-  alert("This alert box was called with the onload event");
-  /*
   if (menu.classList.contains("showMenu")) {
+    closeIcon.style.display = "none";
+    /*
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
+    */
   } else {
+    menuIcon.style.display = "none";
+    /*
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
+    */
   }
-  */
 }
 
 hamburger.addEventListener("click", toggleMenu);
