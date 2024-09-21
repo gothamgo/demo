@@ -92,11 +92,11 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 </header>
 
 <script type="text/javascript">
-const hamburger= document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menu-item");
-const closeIcon= document.querySelector(".close-icon");
-const menuIcon = document.querySelector(".menu-icon");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
@@ -105,8 +105,8 @@ function toggleMenu() {
     menuIcon.style.display = "block";
   } else {
     menu.classList.add("showMenu");
-    menuIcon.style.display = "none";
     closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
   }
 }
 
@@ -116,5 +116,5 @@ menuItems.forEach(
   function(menuItem) { 
     menuItem.addEventListener("click", toggleMenu);
   }
-)  
+)
 </script>
