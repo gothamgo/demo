@@ -65,24 +65,30 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 }
 </style>
 
-  <ul class="menu">
-    <li><a class="menuItem" href="#">Home</a></li>
-    <li><a class="menuItem" href="#">Profile</a></li>
-    <li><a class="menuItem" href="#">About</a></li>
-    <li><a class="menuItem" href="#">Contacts</a></li>
-  </ul>
-  <button class="hamburger">
-    <!-- material icons https://material.io/resources/icons/ -->
-    <i class="menuIcon material-icons">menu</i>
-    <i class="closeIcon material-icons">close</i>
-  </button>
+<nav>
+  <a href="/">HOME</a>
+  <a href="/Favorites/">Favorites</a>
+  <a href="/History/">History</a>
+</nav>
+
+<ul class="menu">
+  <li><a class="menuItem" href="#">Home</a></li>
+  <li><a class="menuItem" href="#">Profile</a></li>
+  <li><a class="menuItem" href="#">About</a></li>
+  <li><a class="menuItem" href="#">Contacts</a></li>
+</ul>
+<button class="hamburger">
+  <!-- material icons https://material.io/resources/icons/ -->
+  <i class="menuIcon material-icons">menu</i>
+  <i class="closeIcon material-icons">close</i>
+</button>
 
 <script type="text/javascript">
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
