@@ -111,7 +111,7 @@ https://codepen.io/ljc-dev/pen/zYoqbrN
 </ul>
 <button class="hamburger">
   <!-- material icons https://material.io/resources/icons/ -->
-  <i class="menuIcon material-icons">menu</i>
+  <i class="menu-icon material-icons">menu</i>
   <i class="close-icon material-icons">close</i>
 </button>
 
@@ -119,18 +119,18 @@ https://codepen.io/ljc-dev/pen/zYoqbrN
   const menu = document.querySelector(".menu");
   const menuItems = document.querySelectorAll(".menu-item");
   const hamburger= document.querySelector(".hamburger");
-  const closeIcon= document.querySelector(".close-icon");
-  const menuIcon = document.querySelector(".menuIcon");
+  const close_icon= document.querySelector(".close-icon");
+  const menu_icon = document.querySelector(".menu-icon");
 
 function toggleMenu() {
   if (menu.classList.contains("show-menu")) {
     menu.classList.remove("show-menu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
+    close_icon.style.display = "none";
+    menu_icon.style.display = "block";
   } else {
     menu.classList.add("show-menu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
+    close_icon.style.display = "block";
+    menu_icon.style.display = "none";
   }
 }
 
