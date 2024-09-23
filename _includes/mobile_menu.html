@@ -2,18 +2,31 @@
 https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 -->
 <style>
-.menuItem {
-  display: block;
-  margin: 2rem 4rem;
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
+/* nav menu */
+@media only screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header nav a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 701px) {
+  header nav {
+    float: right;
+  }
+  header nav a {
+    color: #FFFFFF; /* White */
+    font-size: 20px;
+    padding: 0px 5px 0px 0px;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    color: gray;
+  }
 }
 
-.menuItem:hover {
-  text-decoration: underline;
-}
-
+/* mobile menu */
 @media only screen and (min-width: 701px) {
 .hamburger {
   display: none;
@@ -28,6 +41,19 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
   display: none;
 }
 }
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 700px) {
 .hamburger {
   position: fixed;
@@ -63,6 +89,7 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 .showMenu {
   transform: translateY(0);
 }
+
 </style>
 
 <nav>
