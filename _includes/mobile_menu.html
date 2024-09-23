@@ -1,5 +1,7 @@
 <!--
 https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+similar version here:
+https://codepen.io/ljc-dev/pen/zYoqbrN
 -->
 <style>
 /* nav menu */
@@ -37,7 +39,7 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
   .menu {
     display: none;
   }
-  .showMenu {
+  .show-menu {
     display: none;
   }
 }
@@ -90,7 +92,7 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
   padding-top: 4rem;
 }
 
-.showMenu {
+.show-menu {
   transform: translateY(0);
 }
 </style>
@@ -121,12 +123,12 @@ https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
   const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
+  if (menu.classList.contains("show-menu")) {
+    menu.classList.remove("show-menu");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
   } else {
-    menu.classList.add("showMenu");
+    menu.classList.add("show-menu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
   }
